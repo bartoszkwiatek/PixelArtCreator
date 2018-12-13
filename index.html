@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Creator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <h1>Pixel Art Creator</h1>
+
+    <div>
+    	<h2>Choose grid size:</h2>
+		<form id="sizePicker">
+		    Grid Height:
+		    <input type="number" id="input_height" name="height" min="1" value="1">
+		    Grid Width:
+		    <input type="number" id="input_width" name="width" min="1" value="1">
+		    <input id="submit" type="submit">
+		</form>
+	</div>
+	<div>
+		<h2>Pick color:</h2>
+		<input type="color" id="colorPicker">
+	</div>
+	<div>
+		<h2>Canvas:</h2>
+		<table id="pixel_canvas"></table>
+	</div>
+</div>
+    <script src="designs.js"></script>
+</body>
+</html>

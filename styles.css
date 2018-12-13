@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+    font-family: Roboto;
+    background-color: #3996d3;
+    display: grid;
+
+}
+
+#app {
+    margin: auto;
+    display: grid;
+    grid-template-rows: 70px 130px 90px 1fr;
+    min-width: 400px;
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.5);
+
+    
+}
+
+h1 {
+    font-family: Roboto;
+    font-size: 40px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+        height: 20px;
+
+}
+
+form {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-content: center;
+    justify-items: center;
+    gap: 5px;
+}
+
+#submit {
+    grid-column: span 2;
+}
+
+input[type=number] {
+    width: 3rem;
+}
