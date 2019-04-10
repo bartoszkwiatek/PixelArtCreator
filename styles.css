@@ -1,7 +1,7 @@
 body {
     text-align: center;
     font-family: Roboto;
-    background-color: #3996d3;
+    background-color: #16297A;
     display: grid;
 
 }
@@ -9,13 +9,14 @@ body {
 #app {
     margin: auto;
     display: grid;
-    grid-template-rows: 70px 130px 90px 1fr;
+    grid-template-rows: 70px 130px 50px 1fr;
     min-width: 400px;
     background-color: whitesmoke;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.5);
-
+    resize: none;
+    overflow: auto;
     
 }
 
@@ -38,22 +39,22 @@ td {
 
 table {
     border-collapse: collapse;
-    margin: 0 auto;
+    margin: 20px auto 20px auto;
 }
 
 tr {
-    height: 20px;
+    /* height: 30px; */
 }
 
 td {
-    width: 20px;
-        height: 20px;
-
+    width: 25px;
+    height: 25px;
+    background-color: white;
 }
 
 form {
     display: grid;
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 150px 100px;
     justify-content: center;
     justify-items: center;
     gap: 5px;
@@ -66,3 +67,24 @@ form {
 input[type=number] {
     width: 3rem;
 }
+
+input[type=color] {
+    /* margin-top: 10px; */
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    padding: 1px;
+}
+
+#headerColor {
+    display: inline-block;
+}
+
+.recent {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: white;
+}
+
