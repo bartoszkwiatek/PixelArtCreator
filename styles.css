@@ -7,12 +7,14 @@ body {
 }
 
 #app {
+    box-sizing: border-box;
+    width:100%;
+    /* max-width: 600px; */
     margin: auto;
     display: grid;
     grid-template-rows: 70px 130px 50px 1fr;
-    min-width: 400px;
     background-color: whitesmoke;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.5);
     resize: none;
@@ -21,14 +23,17 @@ body {
 }
 
 h1 {
-    font-family: Roboto;
-    font-size: 40px;
-    margin: 0;
+    font-size: 24px;
 }
 
 h2 {
+    font-size: 20px;
     margin: 0;
     padding: 0 0 10px 0;
+}
+
+h3 {
+    margin: 10px 10px 5px 10px;
 }
 
 table,
@@ -88,3 +93,24 @@ input[type=color] {
     background-color: white;
 }
 
+@media (min-width: 420px) {
+    #app {
+        width: 400px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 600px) {
+    #app {
+        width: 500px;
+        margin: auto;
+    }
+
+    h1 {
+    font-size: 30px;
+    }
+
+    h2 {
+    font-size: 24px;
+    }
+}
